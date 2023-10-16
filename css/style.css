@@ -37,7 +37,6 @@ body{
     overflow: hidden;
     max-width: 1200px;
     padding: var(--padding-container);
-    /* todos los elementos que tienen el container de fondo sobrepasen a este elemento */
     position: relative;
 }
 
@@ -114,5 +113,30 @@ body{
         height:100%;
         background-image: url('../images/bg-desktop.svg');
         background-size: 100% 100%;
+    }
+
+    .hero_container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        --padding-container:20px 0 60px;
+    }
+
+    .hero_picture{
+        flex-basis: 45%;
+    }
+
+    .hero_img{
+        max-width: unset;
+    }
+
+    .hero_texts{
+        flex-basis: 50%;
+        text-align: left;
+    }
+
+    .hero_contact{
+        margin-left: auto;
     }
 }
